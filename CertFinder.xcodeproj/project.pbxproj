@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,6 +13,12 @@
 		5B3A58472562E89200EB15E0 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5B3A58462562E89200EB15E0 /* Preview Assets.xcassets */; };
 		5B3A58522562E89200EB15E0 /* CertFinderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B3A58512562E89200EB15E0 /* CertFinderTests.swift */; };
 		5B3A585D2562E89200EB15E0 /* CertFinderUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B3A585C2562E89200EB15E0 /* CertFinderUITests.swift */; };
+		5B3A586F2562E96800EB15E0 /* KeychainUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B3A586E2562E96800EB15E0 /* KeychainUtil.swift */; };
+		5B3A58792562ED2000EB15E0 /* ASN1Decoder in Frameworks */ = {isa = PBXBuildFile; productRef = 5B3A58782562ED2000EB15E0 /* ASN1Decoder */; };
+		5B3A587F2562EDDA00EB15E0 /* CertDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B3A587E2562EDDA00EB15E0 /* CertDetailView.swift */; };
+		5B3A58882562EE2100EB15E0 /* CertInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B3A58872562EE2100EB15E0 /* CertInfo.swift */; };
+		5B3A58912562F61800EB15E0 /* Data+HexEncodedString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B3A58902562F61800EB15E0 /* Data+HexEncodedString.swift */; };
+		5B3A58972562F98900EB15E0 /* ButtonStyle+Blue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B3A58962562F98900EB15E0 /* ButtonStyle+Blue.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +51,13 @@
 		5B3A58582562E89200EB15E0 /* CertFinderUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CertFinderUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5B3A585C2562E89200EB15E0 /* CertFinderUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CertFinderUITests.swift; sourceTree = "<group>"; };
 		5B3A585E2562E89200EB15E0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5B3A586D2562E8A700EB15E0 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		5B3A586E2562E96800EB15E0 /* KeychainUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainUtil.swift; sourceTree = "<group>"; };
+		5B3A58732562EB2B00EB15E0 /* CertFinder.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = CertFinder.entitlements; sourceTree = "<group>"; };
+		5B3A587E2562EDDA00EB15E0 /* CertDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CertDetailView.swift; sourceTree = "<group>"; };
+		5B3A58872562EE2100EB15E0 /* CertInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CertInfo.swift; sourceTree = "<group>"; };
+		5B3A58902562F61800EB15E0 /* Data+HexEncodedString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Data+HexEncodedString.swift"; sourceTree = "<group>"; };
+		5B3A58962562F98900EB15E0 /* ButtonStyle+Blue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ButtonStyle+Blue.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +65,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5B3A58792562ED2000EB15E0 /* ASN1Decoder in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -75,6 +89,7 @@
 		5B3A58332562E89100EB15E0 = {
 			isa = PBXGroup;
 			children = (
+				5B3A586D2562E8A700EB15E0 /* README.md */,
 				5B3A583E2562E89100EB15E0 /* CertFinder */,
 				5B3A58502562E89200EB15E0 /* CertFinderTests */,
 				5B3A585B2562E89200EB15E0 /* CertFinderUITests */,
@@ -95,6 +110,11 @@
 		5B3A583E2562E89100EB15E0 /* CertFinder */ = {
 			isa = PBXGroup;
 			children = (
+				5B3A58952562F97F00EB15E0 /* Styles */,
+				5B3A588F2562F60500EB15E0 /* Extensions */,
+				5B3A58862562EE0B00EB15E0 /* CertificateParsing */,
+				5B3A587D2562EDCB00EB15E0 /* Views */,
+				5B3A58732562EB2B00EB15E0 /* CertFinder.entitlements */,
 				5B3A583F2562E89100EB15E0 /* CertFinderApp.swift */,
 				5B3A58412562E89100EB15E0 /* ContentView.swift */,
 				5B3A58432562E89200EB15E0 /* Assets.xcassets */,
@@ -130,6 +150,39 @@
 			path = CertFinderUITests;
 			sourceTree = "<group>";
 		};
+		5B3A587D2562EDCB00EB15E0 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				5B3A587E2562EDDA00EB15E0 /* CertDetailView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		5B3A58862562EE0B00EB15E0 /* CertificateParsing */ = {
+			isa = PBXGroup;
+			children = (
+				5B3A586E2562E96800EB15E0 /* KeychainUtil.swift */,
+				5B3A58872562EE2100EB15E0 /* CertInfo.swift */,
+			);
+			path = CertificateParsing;
+			sourceTree = "<group>";
+		};
+		5B3A588F2562F60500EB15E0 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				5B3A58902562F61800EB15E0 /* Data+HexEncodedString.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		5B3A58952562F97F00EB15E0 /* Styles */ = {
+			isa = PBXGroup;
+			children = (
+				5B3A58962562F98900EB15E0 /* ButtonStyle+Blue.swift */,
+			);
+			path = Styles;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -146,6 +199,9 @@
 			dependencies = (
 			);
 			name = CertFinder;
+			packageProductDependencies = (
+				5B3A58782562ED2000EB15E0 /* ASN1Decoder */,
+			);
 			productName = CertFinder;
 			productReference = 5B3A583C2562E89100EB15E0 /* CertFinder.app */;
 			productType = "com.apple.product-type.application";
@@ -217,6 +273,9 @@
 				Base,
 			);
 			mainGroup = 5B3A58332562E89100EB15E0;
+			packageReferences = (
+				5B3A58772562ED2000EB15E0 /* XCRemoteSwiftPackageReference "ASN1Decoder" */,
+			);
 			productRefGroup = 5B3A583D2562E89100EB15E0 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -259,8 +318,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5B3A58882562EE2100EB15E0 /* CertInfo.swift in Sources */,
+				5B3A58912562F61800EB15E0 /* Data+HexEncodedString.swift in Sources */,
+				5B3A586F2562E96800EB15E0 /* KeychainUtil.swift in Sources */,
+				5B3A58972562F98900EB15E0 /* ButtonStyle+Blue.swift in Sources */,
 				5B3A58422562E89100EB15E0 /* ContentView.swift in Sources */,
 				5B3A58402562E89100EB15E0 /* CertFinderApp.swift in Sources */,
+				5B3A587F2562EDDA00EB15E0 /* CertDetailView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -417,6 +481,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = CertFinder/CertFinder.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"CertFinder/Preview Content\"";
 				DEVELOPMENT_TEAM = VRPY9KHGX6;
@@ -439,6 +504,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = CertFinder/CertFinder.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"CertFinder/Preview Content\"";
 				DEVELOPMENT_TEAM = VRPY9KHGX6;
@@ -580,6 +646,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		5B3A58772562ED2000EB15E0 /* XCRemoteSwiftPackageReference "ASN1Decoder" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/filom/ASN1Decoder";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.7.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		5B3A58782562ED2000EB15E0 /* ASN1Decoder */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5B3A58772562ED2000EB15E0 /* XCRemoteSwiftPackageReference "ASN1Decoder" */;
+			productName = ASN1Decoder;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 5B3A58342562E89100EB15E0 /* Project object */;
 }
